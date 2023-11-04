@@ -27,7 +27,7 @@ We created a script main.py to reconstruct the inclusions provided for training 
 
 ```python main.py /path_to_input_folder /path_to_ouput_folder difficulty_level```
 
-The learned weights are stored in the file
+For the denoiser, the learned weights are stored in the file
 ``` weights_denoiser.pth```
 
 
