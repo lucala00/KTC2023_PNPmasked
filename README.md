@@ -21,7 +21,7 @@ Associated noisy versions were computed running a regularised Gauss-Newton algor
 For installation and required environment see the environment_pnp.yml to restore the conda enviroment used for the submission. 
 You can create the enviroment using the following command:
 
-```conda env create -f environment.yml```
+```conda env create -f environment_pnp.yml```
 
 We created a script main.py to reconstruct the inclusions provided for training from voltage measurements:
 
