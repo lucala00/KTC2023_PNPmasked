@@ -3,8 +3,8 @@
 
 ## Brief description of the algorithm
 This repository contains the Python files required by the organisers of the EIT Kuopio challenge 2023 which implements a Plug&Play approach with a post-processing step where synthetic (data-independent) masks are superimposed on the obtained reconstruction to improve results.
-Training was performed with GT simulated data with random polygons of different shapes and postive/negative contrast.
-Associated noisy versions were computed running a regularised Gauss-Newton algorithm for few iterations on the corresponding measurements. 
+Training was performed with GT simulated data with random polygons of different shapes and postive/negative contrast to simulate resistive/conductive inclusions.
+Associated noisy versions were computed running a regularised Gauss-Newton algorithm (on meshes) for few (5) iterations on the corresponding measurements simulated using the forward model provided.
 
 
 ## Authors:
