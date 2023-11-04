@@ -8,13 +8,13 @@ Associated noisy versions were computed running a regularised Gauss-Newton algor
 
 
 ## Authors:
-- Tatiana Bubba, University of Bath, UK, tab73@bath.ac.uk
-- Luca Calatroni, CNRS, FR, calatroni@i3s.unice.fr
-- Damiana Lazzaro, University of Bologna, IT, damiana.lazzaro@unibo.it 
-- Serena Morigi, University of Bologna, IT, serena.morigi@unibo.it 
-- Luca Ratti, University of Bologna, IT, luca.ratti5@unibo.it
-- Matteo Santacesaria, University of Genoa, IT, matteo.Santacesaria@unige.it 
-- Julian Tachella, CNRS, FR, julian.tachella@ens-lyon.fr
+- Tatiana Bubba, University of Bath, UK, tab73'at'bath.ac.uk
+- Luca Calatroni, CNRS, FR, calatroni'at'i3s.unice.fr
+- Damiana Lazzaro, University of Bologna, IT, damiana.lazzaro'at'unibo.it 
+- Serena Morigi, University of Bologna, IT, serena.morigi'at'unibo.it 
+- Luca Ratti, University of Bologna, IT, luca.ratti5'at'unibo.it
+- Matteo Santacesaria, University of Genoa, IT, matteo.Santacesaria'at'unige.it 
+- Julian Tachella, CNRS, FR, julian.tachella'at'ens-lyon.fr
 
 ## Installation instructions and requirements
 
