@@ -27,6 +27,9 @@ We created a script main.py to reconstruct the inclusions provided for training 
 
 ```python main.py /path_to_input_folder /path_to_ouput_folder difficulty_level```
 
+The learned weights are stored in the file
+``` weights_denoiser.pth```
+
 
 ## Reference work: 
 * Francesco Colibazzi, Damiana Lazzaro, Serena Morigi, Andrea Samoré. Deep-plug-and-play proximal Gauss-Newton method with applications to nonlinear, ill-posed inverse problems. Inverse Problems and Imaging, 2023, 17(6): 1226-1248. doi: 10.3934/ipi.2023014
