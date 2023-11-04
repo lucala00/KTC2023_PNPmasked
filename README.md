@@ -1,4 +1,4 @@
-# Code for KTC2023 EIT challenge (Plug&Play approach + post-processing)
+# Code for KTC2023 EIT challenge (Plug&Play + mask)
 
 
 ## Brief description of the algorithm
