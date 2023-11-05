@@ -29,6 +29,9 @@ We created a script main.py to reconstruct the inclusions provided for training 
 For the denoiser, the learned weights are stored in the file
 ``` weights_denoiser.pth```
 
+## Examples
+
+![Examples_PnP_synthetic](https://github.com/lucala00/KTC2023_PNPmasked/assets/148894828/5b8fa942-ce42-4d40-a856-0da472f3aba2)
 
 ## Reference work: 
 * Francesco Colibazzi, Damiana Lazzaro, Serena Morigi, Andrea Samoré. Deep-plug-and-play proximal Gauss-Newton method with applications to nonlinear, ill-posed inverse problems. Inverse Problems and Imaging, 2023, 17(6): 1226-1248. doi: 10.3934/ipi.2023014
