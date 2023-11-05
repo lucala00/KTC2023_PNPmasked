@@ -30,7 +30,7 @@ To improved the segmentation performed on the reconstructions obtained, we incor
 
 We considered a graph-U-net denoiser extending the CNN-based denoiser to non-Euclidian manifold domain. It relies on the Graph U-net architecture, a U-Net-like architecture for graph data which allows high-level feature encoding and decoding for network embedding. It is based on a convolution graph kernel and gPool and gUnpool layers. The pool (gPool) operation samples some nodes to form a smaller graph based on their scalar projection values on a trainable projection vector. As an inverse operation of gPool, the unpooling (gUnpool) operation restores the graph to its original structure with the help of locations of nodes selected in the corresponding gPool layer.
 
-The GU-Net-denoiser as well as the Graph-U-Net can be formalized as a composition of layers, where each layer is characterized by the composition of a graph convolution, which is nothing but a ReLU activation function σ and a gPool/gUnpool operator
+The GU-Net-denoiser as well as the Graph-U-Net can be formalized as a composition of layers, where each layer is characterized by the composition of a graph convolution, which is nothing but a ReLU activation function σ and a gPool/gUnpool operator.
 
 
 ## Authors:
