@@ -221,14 +221,21 @@ def main(inputFolder,outputFolder,categoryNbr):
     ###############
     
     # PnP Parameters
-    its_max_PGN =5        #Maximum number of OUTER iterations for Proximal Gradient Newton- TV (PGN_TV)
+    its_max_PGN = 3    #Maximum number of OUTER iterations for Proximal Gradient Newton- TV (PGN_TV)
     rel_ch_PGN = 5e-4     #relative change
-    alfa = 0.05   #alfa
+    alfa = 5e-2   #alfa
     step_size = 5e-2
+    
+    if categoryNbr>3:
+        alfa= 1e-2
+
+    if categoryNbr>5:
+        its_max_PGN=5
+        
     MASK=True             
     
     mat_files = glob.glob(inputFolder + '/data*.mat')
-    score=0
+ 
     for objectno in range(len(mat_files)):
             mat_dict2 = spio.loadmat(mat_files[objectno])
             
@@ -287,21 +294,16 @@ def main(inputFolder,outputFolder,categoryNbr):
                         if mask_net[i,j]==0:
                             reco_pixgrid_segmented[i,j]=0
              
-            fig, ax = plt.subplots()
-            cax = ax.imshow(reco_pixgrid_segmented, cmap='gray')
-            plt.colorbar(cax)
-            plt.axis('image')
-            plt.title('segmented linear difference reconstruction')
            
-            '''
-            fig, ax = plt.subplots()
-            cax = ax.imshow(reco_pixgrid, cmap='gray')
-            plt.colorbar(cax)
-            plt.axis('image')
-            '''
             
             reconstruction = reco_pixgrid_segmented
             
+            fig, ax = plt.subplots()
+            cax = ax.imshow(reconstruction, cmap='gray')
+            plt.colorbar(cax)
+            plt.axis('image')
+            plt.title('Object '+str(objectno+1)+' Diff.'+str(categoryNbr))
+            plt.show()
             
              
             mdic = {"reconstruction": reconstruction}
