@@ -44,9 +44,21 @@ The GU-Net-denoiser as well as the Graph-U-Net can be formalized as a compositio
 
 ## Installation instructions and requirements
 
-Please use the following command to install the required packages
+Installation enviroment_pnp for pytorch 2.1 and cuda 12.1
 
-```pip install -r requirements.txt```
+```conda create -n  environment_pnp```
+
+```conda activate environment_pnp```
+
+```conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia```
+
+```pip install torch_geometric==2.3.1```
+
+```pip install torch_scatter torch_sparse torch_cluster  -f https://data.pyg.org/whl/torch-${TORCH}+${CUDA}.html  (To be replaced with your version (example: ${TORCH}=2.1.0 and ${CUDA}=cu121)```
+
+```conda install matplotlib```
+
+```pip install git+https://github.com/deepinv/deepinv.git#egg=deepinv```
 
 We created a script main.py to reconstruct the inclusions provided for training from voltage measurements:
 
@@ -66,7 +78,8 @@ For the TrainingData provided by the challenge organisers
 
 After applying the masks described above to the computed reconstruction the results obtaind are reported below, together with the corresponding score:
 
-![Examples_PnP_synthetic](https://github.com/lucala00/KTC2023_PNPmasked/assets/49308207/142393d5-2257-47dd-b090-1c7ef6651363)
+![Examples_PnP_synthetic](https://github.com/lucala00/KTC2023_PNPmasked/assets/49308207/2a00966f-9300-4e98-b944-d156bef70d22)
+
 
 ## Reference work: 
 * Francesco Colibazzi, Damiana Lazzaro, Serena Morigi, Andrea Samoré. Deep-plug-and-play proximal Gauss-Newton method with applications to nonlinear, ill-posed inverse problems. Inverse Problems and Imaging, 2023, 17(6): 1226-1248. doi: 10.3934/ipi.2023014
